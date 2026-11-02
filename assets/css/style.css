@@ -116,7 +116,6 @@ h3 {
 
 .section {
   padding-block: 84px;
-  border-top: 1px solid var(--border);
 }
 
 .section-head {
