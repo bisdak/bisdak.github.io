@@ -93,6 +93,6 @@ in the Pages settings once the certificate is issued.
 ## Notes
 
 - `.nojekyll` stops GitHub Pages from running Jekyll over the files. Keep it.
-- The theme preference is stored in `localStorage`; first visit follows the
-  visitor's OS setting.
+- The theme preference is stored in `localStorage`; first visit defaults to
+  dark mode.
 - No analytics, no tracking, no third-party requests. Fonts are system fonts.
