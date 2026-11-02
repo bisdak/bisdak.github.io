@@ -10,6 +10,7 @@
   --text: #14161a;
   --muted: #5b6270;
   --border: #e3e6eb;
+  --section-divider: #cbd5e1;
   --accent: #2563eb;
   --accent-contrast: #ffffff;
   --accent-soft: rgba(37, 99, 235, 0.12);
@@ -29,6 +30,7 @@ html[data-theme="dark"] {
   --text: #e8eaee;
   --muted: #98a0ae;
   --border: #262b34;
+  --section-divider: #202833;
   --accent: #6d9dff;
   --accent-contrast: #0b1220;
   --accent-soft: rgba(109, 157, 255, 0.15);
@@ -116,7 +118,7 @@ h3 {
 
 .section {
   padding-block: 84px;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--section-divider);
 }
 
 .section-head {
