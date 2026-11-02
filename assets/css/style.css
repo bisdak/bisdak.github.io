@@ -118,6 +118,25 @@ h3 {
   padding-block: 84px;
 }
 
+.section.reveal-pending {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section.reveal-pending.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section.reveal-pending {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 .section-head {
   max-width: 620px;
   margin-bottom: 36px;

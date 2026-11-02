@@ -64,6 +64,26 @@
   var year = document.querySelector("[data-year]");
   if (year) year.textContent = new Date().getFullYear();
 
+  /* ---------- reveal sections as they enter the viewport ---------- */
+
+  if ("IntersectionObserver" in window) {
+    var revealObserver = new IntersectionObserver(
+      function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      },
+      { rootMargin: "0px 0px -8% 0px", threshold: 0 }
+    );
+
+    document.querySelectorAll(".section").forEach(function (section) {
+      section.classList.add("reveal-pending");
+      revealObserver.observe(section);
+    });
+  }
+
   /* ---------- highlight current section in nav ---------- */
 
   var sectionLinks = Array.prototype.slice.call(
