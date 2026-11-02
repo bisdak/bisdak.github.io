@@ -369,6 +369,10 @@ html[data-theme="dark"] .theme-toggle .sun {
   border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
 }
 
+.blog-preview {
+  max-width: 680px;
+}
+
 .card h3 a {
   color: var(--text);
 }
