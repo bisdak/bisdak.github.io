@@ -478,6 +478,29 @@ html[data-theme="dark"] .theme-toggle .sun {
   margin-bottom: 10px;
 }
 
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+.skill-icons li,
+.skill-icons img {
+  width: 48px;
+  height: 48px;
+}
+
+.skill-icons img {
+  border-radius: 10px;
+  transition: transform 0.18s ease;
+}
+
+.skill-icons img:hover {
+  transform: translateY(-3px);
+}
+
 /* ---------- contact ---------- */
 
 .contact-box {
