@@ -501,6 +501,16 @@ html[data-theme="dark"] .theme-toggle .sun {
   transform: translateY(-3px);
 }
 
+html[data-theme="dark"] .skill-icons img.openai-icon {
+  filter: invert(1);
+}
+
+.skill-icons img.litellm-icon {
+  background: #0117be;
+  object-fit: contain;
+  padding: 9px;
+}
+
 /* ---------- contact ---------- */
 
 .contact-box {
